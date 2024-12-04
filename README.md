@@ -3,7 +3,7 @@
 **ID:** CT6WDS2217 </br>
 **Domain:** Frontend </br>
 **Duration:** OCTOBER 23rd, 2024 to DECEMBER 8th, 2024 </br>
-**Mentor:** SANTHOSH 
+**Mentor:** N.SANTHOSH 
 
 ## Overview of the Project 
 
