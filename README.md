@@ -3,11 +3,15 @@
 **ID:** CT6WDS2217 </br>
 **Domain:** Frontend </br>
 **Duration:** OCTOBER 23rd, 2024 to DECEMBER 8th, 2024 </br>
-**Mentor:** 
+**Mentor:** SANTHOSH 
 
 ## Overview of the Project 
 
 ### Project:  RECIPE FINDER APPLICATION
+![Screenshot 2024-12-04 221911](https://github.com/user-attachments/assets/18bf79e3-07ae-4886-b48c-230b9eb14ce8)
+
+![image](https://github.com/user-attachments/assets/d20d0c49-c117-42a5-8827-ff3e549a998c)
+
 
 
 Objective:
