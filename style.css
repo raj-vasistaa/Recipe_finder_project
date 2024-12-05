@@ -1,145 +1,113 @@
-*{
-  padding: 0;
-  margin: 0;
-}
-
-/* #5b7065, black */
 body {
-  background: #ad65e0; 
-  background: -webkit-radial-gradient(center, hwb(259 51% 5%) 0%, rgba(0, 0, 0, 1.0) 100%);
-  background: -moz-radial-gradient(center, #9860a0 0%, rgba(0, 0, 0, 1.0) 100%);
-  background: radial-gradient(ellipse at center, rgb(203, 153, 228) 0%, rgba(0, 0, 0, 1.0) 100%);
-  font-family: 'EB Garamond', cursive;
-  min-height: 100vh;
-}
-
-button {
-  height: fit-content;
-  cursor: pointer;
-  color: #000000;
-  background-color: hsl(290, 45%, 72%);
-}
-
-.app {
-  width: 600px;
-  margin: auto;
-  padding-top: 50px;
-  color: white;
-}
-
-.input-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  padding: 0px 0px 10px 0px;
-}
-
-.to-do-input input {
-  width: 250px;
-  font-family: inherit;
-  border: none;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  padding: 10px;
-  outline: none;
+    background-color: #eee9a2;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
   
-}
-
-.to-do-input button {
-  color: hsl(273, 13%, 41%);
-  font-family: inherit;
-  border: none;
-  padding: 10px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-.to-do-list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.to-do-list i {
-  color: #c9d1c8;
-  cursor: pointer;
-}
-
-.to-do-list .fa-pen-to-square {
-  color: #51316a;
-}
-
-.to-do-list button {
-  padding: 8px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: inherit;
-  border: none;
-  color: #000000;
-}
-
-.item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  padding: 8px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-}
-
-.input-controller {
-  display: flex;
-  gap: 10px;
-}
-
-.input-controller textarea {
-  width: 100%;
-  outline: none;
-  border: none;
-  resize: none;
-  line-height: 1.4;
-  color: white;
-  border-radius: 10px;
-  background-color: transparent;
-  font-size: 1.2rem;
-  font-family: inherit;
-  transition: all 0.30s ease-in-out;
-}
-
-textarea:focus {
-  box-shadow: 0 0 5px white;
-}
-
-.edit-controller {
-  display: flex;
-  gap: 5px;
-}
-
-.update-controller {
-  display: none;
-}
-
-@media(max-width: 768px) {
-  .app {
-    width: 95%;
+  header {
+    background-color: #e6c20f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #141313;
+    font-size: 32px;
+    margin: 0;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
-
-  .input-header {
-    flex-direction: column;
-    padding-bottom: 20px;
-  }
-
-  .to-do-input {
+  
+  form {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
   }
-
-  .to-do-input input {
-    width: 300px;
+  
+  input[type="text"] {
+    background-color: #383737;
+    border: 2px solid #151414;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 12px;
+    width: 500px;
+    color: #fff;
+    margin-right: 20px;
   }
-
-}
+  .btn {
+    cursor: pointer;
+  }
+  button[type="button"] {
+    background-color: hsl(48, 82%, 48%);
+    border: none;
+    border-radius: 8px;
+    color: #f8f3f3;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 20px;
+    transition: background-color 0.2s;
+    margin-left: 12px;
+  }
+  
+  button[type="button"]:hover {
+    background-color: hsl(48, 58%, 64%);
+  }
+  
+  #results {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 40px 0;
+  }
+  
+  #results > div {
+    background-color: #cda00c;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  #results img {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+  }
+  
+  #results h3 {
+    color: #333;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  #results ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #results li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  #results a {
+    background-color: #d2b80e;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  #results a:hover {
+    background-color: #d9b100;
+  }
